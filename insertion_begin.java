@@ -4,22 +4,22 @@ public class insertion_begin {
         int data;
         Node next;
 
-        public Node(int data){
-            this.data=data;
-            this.next=null;
+        public Node(int d){
+            data=d;
+            next=null;
         }
     }
     public Node head=null;
     public void insertBeg(int data)
     {
-        Node temp=new Node(data);
+        Node new_node=new Node(data);
         if(head==null)
-        head=temp;
+        head=new_node;
 
         else
         {
-            temp.next=head;
-            head=temp;
+            new_node.next=head;
+            head=new_node;
         }
     }
 
@@ -43,6 +43,7 @@ public class insertion_begin {
     ob.insertBeg(10);
     ob.insertBeg(20);
     ob.insertBeg(30);
+    ob.insertBeg(40);
     ob.display();
     }
 
