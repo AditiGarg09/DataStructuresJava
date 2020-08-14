@@ -1,4 +1,4 @@
-public class TwoStacks
+public class TwoStacksInSingleArray
 {
     int size=10;
     int arr[]=new int[size];
